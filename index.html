@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <script>
+    function calculator(){
+        var principle=0;
+        var rate=0;
+        var years=0;
+        var si=0;
+        principle=parseInt(document.getElementById("pr").value);
+        rate=parseInt(document.getElementById("ra").value);
+        year=parseInt(document.getElementById("ye").value);
+        si=(principle*rate*year)/100;
+        document.getElementById("cal").innerHTML=si;
+    }
+   </script>
+<div>
+   <div>
+    <h3>Enter the principal</h3>
+    <input type="text" id="pr">
+   </div>
+   <div>
+   <h3>Enter rate of Interest</h3> 
+   <input type="text" id="ra"> 
+   </div>
+   <div>
+    <h3>Enter years</h3>
+    <input type="text" id="ye">
+</div>
+<div>
+    <br>
+    <br>
+<button  class="but" onclick="calculator()"><h5>Calculate</h5></button>
+</div>
+<br>
+<br
+</div>
+<span id="cal">Rs</span>
+</body>
+</html>
